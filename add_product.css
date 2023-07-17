@@ -5,12 +5,17 @@ html {
 .container{
   display:grid;
   margin: 50px;
-  background-color: rgb(255, 210, 227);
+  background-color: rgba(134, 223, 231, 0.333);
   border-radius: 1%;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+  animation: fadeIn 0.5s ease-in-out;
 }
 h1 {
-  margin: 50px;
-  display: inline;
+  margin: 20px;
+  font-family: 'Roboto', sans-serif;
+  font-size: 24px;
+  font-weight: bold;
+  text-transform: uppercase;
 }
 body {
   overflow-y: hidden;
@@ -47,9 +52,12 @@ body {
   font-size: 18px;
   border-radius: 10px;
   box-shadow: 0 6px 20px -5px rgba(14, 14, 14, 0.4);
+  transition: background-color 0.3s ease;
   cursor: pointer;
 }
-
+#cancelButton:hover, #saveButton:hover{
+  background-color: #e6a6a6;
+}
 .element {
 display: flex;
 margin: 30px;
@@ -68,8 +76,8 @@ body::before {
   height: 100%;
   width: 100%;
   z-index: -1;
-  background: var(--color-darkblue);
-  background-image: linear-gradient(180deg, rgba(255, 0, 0, 0.752), rgba(241, 107, 107, 0.621)), url(1.webp);
+
+  background-image: linear-gradient(180deg, rgba(255, 0, 0, 0.752), rgba(69, 0, 0, 0.621)), url(1.webp);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -128,3 +136,12 @@ footer {
 body > footer {
    display: table-row;
 }
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
