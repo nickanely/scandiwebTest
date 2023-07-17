@@ -1,0 +1,130 @@
+html {
+  font-family: 'Roboto', sans-serif;
+  height: 100%;
+}
+.container{
+  display:grid;
+  margin: 50px;
+  background-color: rgb(255, 210, 227);
+  border-radius: 1%;
+}
+h1 {
+  margin: 50px;
+  display: inline;
+}
+body {
+  overflow-y: hidden;
+  min-height:100%; 
+  margin:0; 
+  display: table;
+  width: 100%; 
+  font-family: Arial, sans-serif;
+
+}
+.message{
+  display:flex;
+  justify-content: center;
+  background: var(--bg-color);
+  padding: 1.5rem, 1 rem;
+  font-size: 1.5rem;
+  color: var(--black);
+  margin-bottom: 2rem;
+}
+.button-container{
+  display:flex;
+}
+#cancelButton, #saveButton {
+  display:flex;
+  align-items: center;
+  justify-content: center;
+  margin-left:100px;
+  margin-bottom: 20px;
+  height: 30px;
+  width: 150px;
+  border: 0px;
+  outline: none;
+  background: #ffffff;
+  font-size: 18px;
+  border-radius: 10px;
+  box-shadow: 0 6px 20px -5px rgba(14, 14, 14, 0.4);
+  cursor: pointer;
+}
+
+.element {
+display: flex;
+margin: 30px;
+}
+label{
+  margin-right: 5px;
+  margin-top: 10px;
+  font-family: 'Roboto', sans-serif;
+}
+
+body::before {
+  content: '';
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  z-index: -1;
+  background: var(--color-darkblue);
+  background-image: linear-gradient(180deg, rgba(255, 0, 0, 0.752), rgba(241, 107, 107, 0.621)), url(1.webp);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+#productType{
+  width: 17%;
+  height: 40px;
+  color: #333333;
+  outline: none !important;
+  border: 1px solid rgba(0, 0, 0, 0.3);
+  box-shadow: inset 0 1px 4px rgba(0, 0, 0, 0.2);
+  border-radius: 5px;
+}
+
+.element {
+  display: flex;
+  margin: 30px;
+  }
+.element input {
+  width: 17%;
+  height: 10px;
+  color: #333333;
+  padding: 15px 40px 15px 15px;
+  border-radius: 5px;
+  font-size: 14px;
+  outline: none !important;
+  border: 1px solid rgba(0, 0, 0, 0.3);
+  box-shadow: inset 0 1px 4px rgba(0, 0, 0, 0.2);
+}
+.element input:focus {
+  border-color: #f35464;
+  outline: 0;
+  box-shadow: inset 0 1px 1px #f35464, 0 0 8px #f35464;
+}
+
+.element::after {
+  font-family: FontAwesome;
+  position: absolute;
+  right: 15px;
+  top: 17px;
+  z-index: 2;
+  width: 20px;
+  color: rgba(0, 0, 0, 0.2);
+  text-align: center;
+}
+
+
+.footerP{
+  text-align: center;
+}
+footer {
+  height: 50px;
+
+}
+body > footer {
+   display: table-row;
+}
